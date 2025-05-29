@@ -10,13 +10,10 @@ class employeecontroller extends Controller
 {
     public function index()
     {   
-<<<<<<<<< Temporary merge branch 1
 
-        return view ('employee.index',compact ('employees'));
-=========
         $employees = employee::get();
         return view ('employee.index',compact('employees'));
->>>>>>>>> Temporary merge branch 2
+
     }
 
     public function create()
