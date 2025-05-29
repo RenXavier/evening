@@ -10,13 +10,10 @@ class employeecontroller extends Controller
 {
     public function index()
     {   
-<<<<<<< HEAD
+
         $employees = employee::get();
         return view ('employee.index',compact('employees'));
-=======
 
-        return view ('employee.index',compact ('employees'));
->>>>>>> 1a47acc9b82690f996c4b7412ba2e4b5d5b00daa
     }
 
     public function create()
